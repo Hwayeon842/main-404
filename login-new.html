@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZADU 로그인</title>
+  <link rel="stylesheet" href="../../styles/login.css" />
+  <script src="login.js" defer></script>
+</head>
+<body style="background:#fff; min-height:100vh; margin:0;">
+  <main class="login-page" style="position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+    <h1 class="brand" style="margin-bottom:1rem;">
+      <a href="../main/main.html">
+        <img src="../../assets/images/Logo-jadu-lg.png" alt="ZADU 로고" style="height:80px;width:auto;display:block;" />
+      </a>
+    </h1>
+    <section class="login-card" aria-label="로그인 영역" style="box-shadow:0 1px 8px rgba(0,0,0,0.07);border-radius:10px;min-width:340px;max-width:370px;width:100%;padding:0;overflow:visible;">
+      <div class="tabs" role="tablist" aria-label="로그인 유형 선택" style="margin-bottom:0;">
+        <button type="button" class="tab is-active" role="tab" aria-selected="true" data-role="buyer" style="font-weight:700;">구매회원 로그인</button>
+        <button type="button" class="tab" role="tab" aria-selected="false" data-role="seller">판매회원 로그인</button>
+      </div>
+      <form class="form" id="loginForm" action="#" method="post" style="padding:2.2rem 2.2rem 1.5rem 2.2rem;background:#fff;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+        <label class="field" style="margin-bottom:1.6rem;">
+          <span class="label" style="display:none;">아이디</span>
+          <input type="text" id="userId" name="id" placeholder="아이디" autocomplete="username" style="width:100%;height:2.5rem;padding:0 0.2rem;border:none;border-bottom:1.5px solid #d9d9d9;border-radius:0;outline:none;font-size:1.05rem;background:transparent;margin-bottom:0.5rem;color:#222;" />
+        </label>
+        <label class="field" style="margin-bottom:1.6rem;">
+          <span class="label" style="display:none;">비밀번호</span>
+          <input type="password" id="userPw" name="pw" placeholder="비밀번호" autocomplete="current-password" style="width:100%;height:2.5rem;padding:0 0.2rem;border:none;border-bottom:1.5px solid #d9d9d9;border-radius:0;outline:none;font-size:1.05rem;background:transparent;margin-bottom:0.5rem;color:#222;" />
+        </label>
+        <p class="error-message" id="errorMessage" style="min-height:1.125rem;padding-top:0.5rem;margin:0;font-size:0.8125rem;color:#e60023;"></p>
+        <button class="submit" type="submit" style="width:100%;height:3.1rem;margin-top:-2.5rem;border:0;border-radius:8px;background:#21BF48;color:#fff;font-weight:700;font-size:1.18rem;cursor:pointer;letter-spacing:0.01em;transition:background 0.15s;box-shadow:none;display:flex;align-items:center;justify-content:center;">
+          로그인
+        </button>
+      </form>
+    </section>
+    <div class="links" style="margin-top:-1rem;display:flex;justify-content:center;gap:0.625rem;font-size:0.95rem;color:#888;">
+      <a href="/pages/signup/signup.html" style="color:#888;text-decoration:none;">회원가입</a>
+      <span class="dot" style="color:#c0c0c0;">|</span>
+      <a href="#" style="color:#888;text-decoration:none;">비밀번호 찾기</a>
+    </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
